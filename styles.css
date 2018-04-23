@@ -1,0 +1,37 @@
+/* Styled the question button with the info color and style */
+.question {
+    background-color:  #bbdefb;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    transition: 0.6s;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+/* Added a background color to be the same color when the div is active and on hover  */
+.active, .question:hover {
+    background-color: #33b5e5;
+}
+
+/* THe answer panel is hidden by default and has a gray background color */
+.answer {
+
+    padding: 0 25px;
+    background-color: #eee;
+    display: none;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.faq h4{
+    padding-top: 20px;
+    margin-top:20px;
+}
+
+.fa-arrow-down {
+    float:right;
+}
