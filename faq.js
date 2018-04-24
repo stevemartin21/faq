@@ -21,3 +21,31 @@ for (i = 0; i < question.length; i++) {
 // fa aarow up
 
 // element.classList.remove("mystyle");
+
+// My Listy
+
+
+function listSearch() {
+    //  Name Variables 
+    let input;
+    let filter;
+    let ul;
+    let li;
+    let link;
+    let i;
+
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("teamList");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        link = li[i].getElementsByTagName("a")[0];
+        if (link.text.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
